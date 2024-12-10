@@ -57,6 +57,9 @@
 		<goal>sonar</goal>
 	</goals>		
 	<configuration>
+		<properties>
+		<sonar.host.url>http://13.208.70.32:9000</sonar.host.url>
+		</properties>
 		<executable>sh</executable>
 		<arguments>
 			<argument>-c</argument>
@@ -65,9 +68,6 @@
 			</argument>	
 		</arguments>
 	</configuration>	
-	<properties>
-		<sonar.host.url>http://13.208.70.32:9000</sonar.host.url>
-	</properties>
 </execution>
 </executions>   
 	    </plugin>
