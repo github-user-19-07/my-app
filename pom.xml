@@ -57,7 +57,7 @@
 		<goal>exec</goal>
 	</goals>
 	<configuration>
-		<executable>sh</executeable>
+		<executable>sh</executable>
 		<arguments>
 			<argument>-c</argument>
 			<argument>
