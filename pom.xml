@@ -50,9 +50,6 @@
 <groupId>org.sonarsource.scanner.maven</groupId>
 <artifactId>sonar-maven-plugin</artifactId>
 <version>4.0.0.4121</version> <!-- 3.6.0.1398, 3.6.1.1688, 3.7.0.1746, 3.8.0.2131, 3.9.1.2184, 4.0.0.4121, 5.0.0.4389 3.9.0.2155, 4.0.0.4121 -->
-<configuration>
-	<argLine>--add-opens java.base/java.lang=ALL-UNNAMED</argLine>
-</configuration>
 <executions>
 <execution>
 	<phase>compilex</phase>
@@ -60,7 +57,10 @@
 		<goal>sonar</goal>
 	</goals>
 </execution>
-</executions>	
+</executions>
+<configuration>
+	<argLine>--add-opens java.base/java.lang=ALL-UNNAMED</argLine>
+</configuration>		    
 	    </plugin>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
