@@ -66,8 +66,7 @@
 			</argument>	
 		</arguments>
 	</configuration>
-</execution>	
-<execution>
+
 	<phase>compilex</phase>
 	<goals>
 		<goal>sonar</goal>
