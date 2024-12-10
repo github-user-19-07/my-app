@@ -55,7 +55,7 @@
 	<phase>validate</phase>
 	<goals>
 		<goal>sonar</goal>
-	</goals>
+	</goals>		
 	<configuration>
 		<executable>sh</executable>
 		<arguments>
@@ -65,6 +65,9 @@
 			</argument>	
 		</arguments>
 	</configuration>	
+	<properties>
+		<sonar.host.url>http://13.208.70.32:9000</sonar.host.url>
+	</properties>
 </execution>
 </executions>   
 	    </plugin>
