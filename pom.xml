@@ -54,7 +54,7 @@
 <execution>
 	<phase>validate</phase>
 	<goals>
-		<goal>exec</goal>
+		<goal>sonar</goal>
 	</goals>
 	<configuration>
 		<executable>sh</executable>
