@@ -58,10 +58,10 @@
 	</goals>		
 	<configuration>
 		<properties>
-		<property>	
+	<!--	<property>	
 			<name>sonar.host.url</name>
 			<value>http://13.208.70.32:9000</value>
-		</property>		
+		</property>		-->
 		</properties>
 		<executable>sh</executable>
 		<arguments>
