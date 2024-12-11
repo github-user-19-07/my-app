@@ -60,28 +60,10 @@
 		<PATH>${env.PATH}:/opt/node-v22.12.0-linux-x64/bin</PATH>
 	</environmentVariables>
 	<executable>echo</executable>
-	<arguments><argument>${env.PATH}</argument></arguments>
-</configuration>>
-		 <!--		    
-<executions>
-<execution>
-	<phase>validate</phase>
-	<goals>
-		<goal>sonar</goal>
-	</goals>		
-	<configuration>
-		<properties>
-		</properties>
-		<executable>sh</executable>
-		<arguments>
-			<argument>-c</argument>
-			<argument>
-				export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.23.0.9-2.amzn2.0.1.x86_64/bin/java
-			</argument>	
-		</arguments>
-	</configuration>	
-</execution>
-</executions>   -->    
+	<arguments>
+		<argument>${env.PATH}</argument>
+	</arguments>
+</configuration>>	
 	 </plugin>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
