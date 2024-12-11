@@ -58,7 +58,9 @@
 <configuration>
 	<environmentVariables>
 		<PATH>${env.PATH}:/opt/node-v22.12.0-linux-x64/bin</PATH>
-	</environmentVariables
+	</environmentVariables>
+	<executable>echo</executable>
+	<arguments><argument>${env.PATH}</argument></arguments>
 </configuration>>
 		 <!--		    
 <executions>
