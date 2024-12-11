@@ -51,27 +51,7 @@
 	</properties> -->
 <build>
     <plugins>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-war-plugin</artifactId>
-            <version>3.3.0</version> <!-- Or 3.2.3 -->
-        </plugin>
-	    <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.6.1</version>
-            <configuration>
-                <source>1.7</source>
-                <target>1.7</target>
-            </configuration>
-          </plugin>
-	  <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <version>2.19</version>		
-          </plugin>
-	    
-	    <plugin>
+	 <plugin>
 <groupId>org.sonarsource.scanner.maven</groupId>
 <artifactId>sonar-maven-plugin</artifactId>
 <version>5.0.0.4389</version> <!-- 3.6.0.1398, 3.6.1.1688, 3.7.0.1746, 3.8.0.2131, 3.9.1.2184, 4.0.0.4121, 5.0.0.4389 3.9.0.2155, 4.0.0.4121 -->
@@ -92,7 +72,11 @@
 </configuration>	
 </execution>
 </executions>
-
+	 </plugin>
+	 <plugin>
+<groupId>org.sonarsource.scanner.maven</groupId>
+<artifactId>sonar-maven-plugin</artifactId>
+<version>4.0.0.4121</version> <!-- 3.6.0.1398, 3.6.1.1688, 3.7.0.1746, 3.8.0.2131, 3.9.1.2184, 4.0.0.4121, 5.0.0.4389 3.9.0.2155, 4.0.0.4121 -->
 <!--		    
 <executions>
 <execution>
@@ -112,9 +96,28 @@
 		</arguments>
 	</configuration>	
 </execution>
-</executions>   -->
-	    </plugin>
-	     <plugin>
+</executions>   -->    
+	 </plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.3.0</version> <!-- Or 3.2.3 -->
+        </plugin>
+	    <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.6.1</version>
+            <configuration>
+                <source>1.7</source>
+                <target>1.7</target>
+            </configuration>
+          </plugin>
+	  <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>2.19</version>		
+          </plugin>      
+	    <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
           <configuration>
