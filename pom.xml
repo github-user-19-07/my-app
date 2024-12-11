@@ -59,7 +59,11 @@
 	<environmentVariables>
 		<PATH>${env.PATH}:/opt/node-v22.12.0-linux-x64/bin</PATH>
 	</environmentVariables>
-</configuration>>	
+	<executable>echo</executable>
+	<arguments>
+		<argument>${env.PATH}</argument>
+	</arguments>
+</configuration>	
 	 </plugin>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
