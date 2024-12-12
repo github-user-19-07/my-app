@@ -65,7 +65,7 @@
 			<execution>
 				<id>exec-grunt-build</id>
 				<phase>generate-sources</phase>
-				<workingDirectory>${project.resourcesfolder}</workingDirectory>
+			<!--	<workingDirectory>${project.resourcesfolder}</workingDirectory> -->
 					<executable>${grunt_command}</executable>
 					<arguments>
 						<argument>build</argument>
