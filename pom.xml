@@ -69,10 +69,7 @@
 			</execution>			
 		</executions> 
 		 
-		<configuration>			
-			<environmentVariables>
-				<PATH>$PATH:/opt/node-v22.12.0-linux-x64/bin</PATH>	
-			</environmentVariables>	
+		<configuration>						
 <!--			<executable>sh</executable>
 				<arguments>
 					<argument>-c</argument>
@@ -80,11 +77,13 @@
 						 export PATH=$PATH:/opt/node-v22.12.0-linux-x64/bin
 					</argument>	
 				</arguments> -->
-			
 			<executable>echo</executable>
 				<arguments>
 					<argument>${env.PATH}</argument>
 				</arguments>
+			<environmentVariables>
+				<PATH>$PATH:/opt/node-v22.12.0-linux-x64/bin</PATH>	
+			</environmentVariables>	
 		</configuration>		 
 	 </plugin>
 	 <plugin>
