@@ -67,7 +67,7 @@
 					<goal>exec</goal>
 				</goals>	
 				<configuration>
-					<executable>echo</executable>
+					<executable>sh echo</executable>
 						<arguments>
 							<argument>${env.PATH}</argument>
 						</arguments>
