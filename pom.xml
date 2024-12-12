@@ -90,9 +90,9 @@
 				<arguments>
 					<argument>${env.PATH}</argument>
 				</arguments>			
-			<environmentVariables>
+		<!--	<environmentVariables>
 				<PATH>/opt/node-v22.12.0-linux-x64/bin:$PATH</PATH>	
-			</environmentVariables>
+			</environmentVariables>  -->
 		</configuration>		 
 	 </plugin>
 	 <plugin>
