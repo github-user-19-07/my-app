@@ -62,16 +62,16 @@
 		 <artifactId>exec-maven-plugin</artifactId>
 		<version>3.1.0</version>
 		<executions>
-			<execution>	 
-				<goals>
-					<goal>exec</goal>
-				</goals>	
+			<execution>
 				<configuration>
 					<executable>sh echo</executable>
 						<arguments>
 							<argument>${env.PATH}</argument>
 						</arguments>
 				</configuration>
+				<goals>
+					<goal>exec</goal>
+				</goals>
 			</execution>
 		</executions>  
 	 </plugin>
