@@ -62,26 +62,24 @@
 		 <artifactId>exec-maven-plugin</artifactId>
 		<version>3.1.0</version>
 		<executions>
-			<execution>
-				<id>exec-grunt-build</id>
+			<execution>			
+				<goals>
+					<goal>exec</goal>
+				</goals>				
+			</execution>			
+		</executions> 		 
+		<configuration>	
+		<!--		<id>exec-grunt-build</id>
 				<phase>generate-sources</phase>
-			<!--	<workingDirectory>${project.resourcesfolder}</workingDirectory> -->
+				<workingDirectory>${project.resourcesfolder}</workingDirectory> 
 					<executable>${grunt_command}</executable>
 					<arguments>
 						<argument>build</argument>
 					</arguments>
 					<environmentVariables>
-						<PATH>$PATH:/opt/node-v22.12.0-linux-x64/bin</PATH>	
-					</environmentVariables>
-				<goals>
-					<goal>exec</goal>
-				</goals>				
-			</execution>			
-		</executions> 
-		 
-		<configuration>	
-	<!--		
-			<executable>sh</executable>
+						<PATH>/opt/node-v22.12.0-linux-x64:$PATH/bin</PATH>	
+					</environmentVariables> -->
+	<!--		<executable>sh</executable>
 				<arguments>
 					<argument>-c</argument>
 					<argument>
@@ -92,6 +90,9 @@
 				<arguments>
 					<argument>${env.PATH}</argument>
 				</arguments>			
+			<environmentVariables>
+				<PATH>/opt/node-v22.12.0-linux-x64/bin:$PATH</PATH>	
+			</environmentVariables>
 		</configuration>		 
 	 </plugin>
 	 <plugin>
