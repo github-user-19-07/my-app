@@ -66,16 +66,22 @@
 				<goals>
 					<goal>exec</goal>
 				</goals>
-			</execution>
+			</execution>			
 		</executions> 
+		 
 		<configuration>
-			<executable>sh</executable>
+			<executable>echo</executable>
+			<environmentVariables>
+				<PATH>$PATH:/opt/node-v22.12.0-linux-x64/bin</PATH>	
+			</environmentVariables>	
+<!--			<executable>sh</executable>
 				<arguments>
 					<argument>-c</argument>
 					<argument>
 						 export PATH=$PATH:/opt/node-v22.12.0-linux-x64/bin
 					</argument>	
-				</arguments>
+				</arguments> -->
+			
 			<executable>echo</executable>
 				<arguments>
 					<argument>${env.PATH}</argument>
@@ -90,15 +96,15 @@
 			<execution>	 
 				<goals>
 					<goal>sonar</goal>
-				</goals>	
-				<configuration>
-					<executable>echo</executable>
-						<arguments>
-							<argument>${env.PATH}</argument>
-						</arguments>
-				</configuration>
+				</goals>
 			</execution>
 		</executions>  
+			<configuration>
+				<executable>echo</executable>
+					<arguments>
+						<argument>${env.PATH}</argument>
+					</arguments>
+			</configuration>			
 		  <!--
 <configuration>
 	<executable>echo</executable>
