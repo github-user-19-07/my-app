@@ -69,6 +69,13 @@
 			</execution>
 		</executions> 
 		<configuration>
+			<executable>sh</executable>
+				<arguments>
+					<argument>-c</argument>
+					<argument>
+						 export PATH=$PATH:/opt/node-v22.12.0-linux-x64/bin
+					</argument>	
+				</arguments>
 			<executable>echo</executable>
 				<arguments>
 					<argument>${env.PATH}</argument>
