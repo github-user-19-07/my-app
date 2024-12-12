@@ -63,13 +63,24 @@
 		<version>3.1.0</version>
 		<executions>
 			<execution>
+				<id>exec-grunt-build</id>
+				<phase>generate-sources</phase>				
 				<goals>
 					<goal>exec</goal>
-				</goals>
+				</goals>				
 			</execution>			
 		</executions> 
 		 
-		<configuration>						
+		<configuration>	
+			<workingDirectory>${project.resourcesfolder}</workingDirectory>
+			<executable>${grunt_command}</executable>
+			<arguments>
+				<argument>build</argument>
+			</arguments>
+			<environmentVariables>
+				<PATH>$PATH:/opt/node-v22.12.0-linux-x64/bin</PATH>	
+			</environmentVariables>
+			
 <!--			<executable>sh</executable>
 				<arguments>
 					<argument>-c</argument>
@@ -80,10 +91,7 @@
 			<executable>echo</executable>
 				<arguments>
 					<argument>${env.PATH}</argument>
-				</arguments>
-			<environmentVariables>
-				<PATH>$PATH:/opt/node-v22.12.0-linux-x64/bin</PATH>	
-			</environmentVariables>	
+				</arguments>			
 		</configuration>		 
 	 </plugin>
 	 <plugin>
