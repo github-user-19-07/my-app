@@ -98,7 +98,7 @@
 	 <plugin>
 <groupId>org.sonarsource.scanner.maven</groupId>
 <artifactId>sonar-maven-plugin</artifactId>
-<version>3.4.0.905</version> <!-- 3.6.0.1398, 3.6.1.1688, 3.7.0.1746, 3.8.0.2131, 3.9.1.2184, 4.0.0.4121, 5.0.0.4389 3.9.0.2155, 4.0.0.4121 -->
+<version>4.0.0.4121</version> <!-- 3.6.0.1398, 3.6.1.1688, 3.7.0.1746, 3.8.0.2131, 3.9.1.2184, 4.0.0.4121, 5.0.0.4389 3.9.0.2155, 4.0.0.4121 -->
 		 <executions>
 			<execution>	 
 				<goals>
